@@ -66,11 +66,11 @@ In this task, you use the SQL Server Configuration Manager to update the service
    
 1. Click on **OK**.
  
-1. Observe that the **Log On As** value for the SQL Server (MSSQLSERVER) service changed to `./sqlmiuser`.
+1. Observe that the **Log On As** value for the SQL Server (MSSQLSERVER) service changed to `.\sqlmiuser`.
 
    ![](media/sql15.png)
 
-    >**Note**: If the change doesn't occur immediately, wait 1 to 2 minutes for the Log On As value for the SQL Server (MSSQLSERVER) service changed to `./sqlmiuser`.
+    >**Note**: If the change doesn't occur immediately, wait 1 to 2 minutes for the Log On As value for the SQL Server (MSSQLSERVER) service changed to `.\sqlmiuser`.
     
 1. Close the SQL Server Configuration Manager.
 
@@ -164,7 +164,7 @@ In this task, you use the Azure Cloud shell to retrieve the information necessar
 1. At the prompt, run the below command to retrieve information about SQL MI in the SQLMI-Shared-RG resource group by entering the following PowerShell command.
 
    ```PowerShell
-   $resourceGroup = "SQLMI-Shared-RG"
+   $resourceGroup = "SQLMI-shared-RG"
    az sql mi list --resource-group $resourceGroup
    ```
 
